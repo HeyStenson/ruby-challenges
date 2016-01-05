@@ -18,6 +18,7 @@ end
 
 collatz(14)
 
+# Sum Pairs: Write a program to find all pairs of integers in an array that sum up to a specified value.
 def sum_pairs(arr, tot)
 	arr.product(arr).select! {|i| i[0] + i[1] == tot}
 end
