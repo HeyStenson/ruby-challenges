@@ -48,8 +48,23 @@ def subtraction(num, subby)
 	new_num = num + subby.to_s.prepend("-").to_i
 end
 
+# Factorial! A factorial is a number multiplied by all of its integers. So 5! would be 5 * 4 * 3 * 2 * 1, or 120.
+# Non-recursive solution
+
+def factorial(n)
+  return 1 if n == 0
+  new_num = 0
+  (n - 1).times do
+    new_num += 1
+    n *= new_num
+  end
+  n
+end
+
+# Recursive solution
+def factorial(n)
+  return 1 if n == 0
+  n * factorial(n - 1)
+end
+
 #Number to Words: Given an integer between 0 and 999,999, print an English phrase that describes the integer (e.g., "One Thousand, Two Hundred and Thirty Four").
-# def num_to_words(num)
-# 	arr = num.to_s.split("")
-# 	case arr[0]
-# end
