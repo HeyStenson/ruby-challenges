@@ -50,7 +50,6 @@ end
 
 # Factorial! A factorial is a number multiplied by all of its integers. So 5! would be 5 * 4 * 3 * 2 * 1, or 120.
 # Non-recursive solution
-
 def factorial(n)
   return 1 if n == 0
   new_num = 0
@@ -67,4 +66,13 @@ def factorial(n)
   n * factorial(n - 1)
 end
 
-#Number to Words: Given an integer between 0 and 999,999, print an English phrase that describes the integer (e.g., "One Thousand, Two Hundred and Thirty Four").
+# Pyramid! Make a lil pyramid using # symbols
+def pyramid(n)
+  count = 1
+  n.times do
+    puts (" " * (n - count)) + ("#" * count)
+    count += 1
+  end
+end
+
+# Number to Words: Given an integer between 0 and 999,999, print an English phrase that describes the integer (e.g., "One Thousand, Two Hundred and Thirty Four").
