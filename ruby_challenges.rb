@@ -5,7 +5,7 @@
 def collatz(num)
 	count = 0
 	while num > 1 do
-		if num % 2 == 0
+		if num.even?
 			num /= 2
 			count += 1
 		else
